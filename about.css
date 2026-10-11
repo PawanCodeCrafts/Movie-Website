@@ -1,0 +1,270 @@
+
+/* About Page */
+.about-hero {
+  min-height: 490px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 85% 35%, #45217b70, transparent 40%),
+    linear-gradient(115deg, #050b14, #101027 65%, #1b1032);
+}
+
+.about-hero::after {
+  content: "cine vault";
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: clamp(16rem, 35vw, 30rem);
+  font-weight: 900;
+  line-height: 1;
+  color: #ffffff08;
+  pointer-events: none;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  padding: 80px 0;
+}
+
+.about-label {
+  color: #b78aff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.about-hero h1 {
+  color: #fff;
+  font-size: clamp(2.5rem, 6vw, 4.7rem);
+  line-height: 1.12;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.about-hero h1 span,
+.about-heading span {
+  color: #a970ff;
+}
+
+.about-hero-text {
+  max-width: 620px;
+  color: #c1c9d6;
+  line-height: 1.9;
+  font-size: 1.05rem;
+  margin-bottom: 28px;
+}
+
+.about-btn {
+  display: inline-block;
+  padding: 13px 23px;
+  border-radius: 8px;
+  background: #6c3bff;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #5425db;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.about-story {
+  background: #050b14;
+}
+
+.story-visual {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #39275c;
+  border-radius: 20px;
+  background:
+    url('images/about.avif');
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+.story-decoration {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border: 1px solid #a970ff55;
+  border-radius: 50%;
+  box-shadow: 0 0 0 35px #a970ff0c,
+              0 0 0 70px #a970ff08;
+}
+
+.story-content {
+  position: relative;
+  padding: 30px;
+  text-align: center;
+}
+
+.story-content span {
+  font-size: 3.5rem;
+}
+
+.story-content h2 {
+  color: #fff;
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 20px 0 12px;
+}
+
+.story-content p {
+  color: #b78aff;
+  letter-spacing: 1px;
+}
+
+.about-heading {
+  color: #fff;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 22px;
+}
+
+.about-paragraph {
+  color: #b8c1d4;
+  font-size: 0.97rem;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+.mission-section {
+  background: #080d18;
+}
+
+.mission-card,
+.offer-card {
+  height: 100%;
+  padding: 30px;
+  border: 1px solid #20283a;
+  border-radius: 15px;
+  background: #0c1422;
+  transition: 0.3s ease;
+}
+
+.mission-card:hover,
+.offer-card:hover {
+  transform: translateY(-5px);
+  border-color: #9b5cff;
+}
+
+.mission-icon,
+.offer-card span {
+  display: inline-block;
+  font-size: 2.4rem;
+  margin-bottom: 18px;
+}
+
+.mission-card h3,
+.offer-card h4 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.mission-card p,
+.offer-card p {
+  color: #b8c1d4;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.offer-section {
+  background: #050b14;
+}
+
+.offer-intro {
+  color: #a0aabd;
+  margin-top: 12px;
+}
+
+.offer-card {
+  padding: 25px 20px;
+}
+
+.offer-card h4 {
+  font-size: 1.08rem;
+}
+
+.offer-card p {
+  font-size: 0.9rem;
+}
+
+.about-cta {
+  background:
+    radial-gradient(ellipse at center, #45217b55, transparent 65%),
+    #080d18;
+}
+
+.about-cta h2 {
+  color: #fff;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.about-cta > .container > p:not(.about-label) {
+  color: #b8c1d4;
+  margin-bottom: 25px;
+}
+
+.footer-simple {
+  padding-top: 35px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.footer-simple .footer-brand {
+  margin-bottom: 10px;
+}
+
+.footer-simple p {
+  color: #a0aabd;
+  margin-bottom: 10px;
+}
+
+.footer-simple .footer-copyright {
+  padding-top: 18px;
+  margin-top: 22px;
+  border-top: 1px solid #20283a;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 576px) {
+  .about-hero {
+    min-height: 430px;
+  }
+
+  .about-hero-content {
+    padding: 65px 0;
+  }
+
+  .about-hero-text {
+    font-size: 0.95rem;
+  }
+
+  .story-visual {
+    min-height: 290px;
+  }
+
+  .mission-card {
+    padding: 25px;
+  }
+}

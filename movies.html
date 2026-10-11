@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>All Movies | CineVault</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Existing Website CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Movies Page CSS -->
+    <link rel="stylesheet" href="movies.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg cine-navbar">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                🎬 Cine <span>Vault</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="movies.html">Movies</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#tv-shows">TV Shows</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#genres">Genres</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Movies Hero -->
+    <header class="movies-hero">
+        <div class="container">
+            <p class="section-label">YOUR NEXT FAVORITE FILM</p>
+
+            <h1>Explore <span>Movies</span></h1>
+
+            <p>
+                From legendary classics to the latest blockbusters,
+                discover stories worth watching.
+            </p>
+        </div>
+    </header>
+
+
+    <!-- All Movies Section -->
+    <section class="all-movies-section">
+        <div class="container">
+
+            <div class="movies-heading">
+                <div>
+                    <p class="section-label">THE COLLECTION</p>
+                    <h2>All Movies</h2>
+                </div>
+
+                <span class="movie-count">Explore our collection</span>
+            </div>
+
+
+            <!-- Search and Filter -->
+            <div class="row g-3 movies-controls">
+
+                <div class="col-12 col-md-7">
+                    <input type="search" id="movieSearch" class="form-control movie-search"
+                        placeholder="Search movies..." aria-label="Search movies">
+                </div>
+
+                <div class="col-12 col-md-5">
+                    <select id="genreFilter" class="form-select movie-filter" aria-label="Filter movies by genre">
+                        <option value="all">All Genres</option>
+                        <option value="horror">Horror</option>
+                        <option value="action">Action</option>
+                        <option value="sci-fi">Sci-Fi</option>
+                        <option value="drama">Drama</option>
+                        <option value="thriller">Thriller</option>
+                        <option value="fantasy">Fantasy</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <!-- Movie Cards -->
+            <div class="row g-4 mt-2" id="movieContainer">
+
+                <!-- Movie 1 -->
+                <div class="col-6 col-md-4 col-lg-3 movie-item" data-title="inception" data-genre="sci-fi thriller">
+
+                    <div class="movie-card h-100">
+                        <img src="images/inception.avif" alt="Inception movie poster">
+
+                        <div class="movie-card-info">
+                            <h5>Inception</h5>
+                            <p>2010 • Sci-Fi</p>
+                            <p class="imdb">★ IMDb 8.8/10</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Movie 2 -->
+                <div class="col-6 col-md-4 col-lg-3 movie-item" data-title="interstellar" data-genre="sci-fi drama">
+
+                    <div class="movie-card h-100">
+                        <img src="images/intersteller.avif" alt="Interstellar movie poster">
+
+                        <div class="movie-card-info">
+                            <h5>Interstellar</h5>
+                            <p>2014 • Sci-Fi</p>
+                            <p class="imdb">★ IMDb 8.7/10</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Movie 3 -->
+                <div class="col-6 col-md-4 col-lg-3 movie-item" data-title="avengers" data-genre="action sci-fi">
+
+                    <div class="movie-card h-100">
+                        <img src="images/avengers.webp" alt="The Avengers movie poster">
+
+                        <div class="movie-card-info">
+                            <h5>The Avengers</h5>
+                            <p>2012 • Action</p>
+                            <p class="imdb">★ IMDb 8.0/10</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Movie 4 -->
+                <div class="col-6 col-md-4 col-lg-3 movie-item" data-title="1920"
+                    data-genre="horror">
+
+                    <div class="movie-card h-100">
+                        <img src="images/1920.jpg" alt="1920 movie poster">
+
+                        <div class="movie-card-info">
+                            <h5>1920 Horror Movie</h5>
+                            <p>2008 • horror</p>
+                            <p class="imdb">★ IMDb 9.0/10</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Movie 5 -->
+                <div class="col-6 col-md-4 col-lg-3 movie-item" data-title="avatar" data-genre="sci-fi action">
+
+                    <div class="movie-card h-100">
+                        <img src="images/avatar.jpg" alt="Avatar movie poster">
+
+                        <div class="movie-card-info">
+                            <h5>Avatar</h5>
+                            <p>2009 • Sci-Fi</p>
+                            <p class="imdb">★ IMDb 7.9/10</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Movie 6 -->
+                <div class="col-6 col-md-4 col-lg-3 movie-item" data-title="joker" data-genre="drama thriller">
+
+                    <div class="movie-card h-100">
+                        <img src="images/joker.jpg" alt="Joker movie poster">
+
+                        <div class="movie-card-info">
+                            <h5>Joker</h5>
+                            <p>2019 • Drama</p>
+                            <p class="imdb">★ IMDb 8.3/10</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Movie 7 -->
+                <div class="col-6 col-md-4 col-lg-3 movie-item" data-title="doctor strange" data-genre="action fantasy">
+
+                    <div class="movie-card h-100">
+                        <img src="images/doctor-strange.jpg" alt="Doctor Strange movie poster">
+
+                        <div class="movie-card-info">
+                            <h5>Doctor Strange</h5>
+                            <p>2016 • Fantasy</p>
+                            <p class="imdb">★ IMDb 7.5/10</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Movie 8 -->
+                <div class="col-6 col-md-4 col-lg-3 movie-item" data-title="harry potter" data-genre="fantasy drama">
+
+                    <div class="movie-card h-100">
+                        <img src="images/harrypotter.avif" alt="Harry Potter movie poster">
+
+                        <div class="movie-card-info">
+                            <h5>Harry Potter</h5>
+                            <p>2001 • Fantasy</p>
+                            <p class="imdb">★ IMDb 7.7/10</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p id="noResults" class="no-results d-none">
+                No movies found. Try another search!
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="cine-footer">
+        <div class="container text-center">
+            <a class="navbar-brand" href="index.html">
+                🎬 Cine <span>Vault</span>
+            </a>
+
+            <p class="mt-3 mb-0">
+                Your world of movies, all in one place.
+            </p>
+
+            <p class="footer-bottom mt-4 mb-0">
+                © 2026 CineVault. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Movies Page JS -->
+
+    <script>
+        const search = document.getElementById("movieSearch");
+        const genre = document.getElementById("genreFilter");
+        const movies = document.querySelectorAll(".movie-item");
+        const noResults = document.getElementById("noResults");
+
+        function filterMovies() {
+            let count = 0;
+
+            movies.forEach(movie => {
+                const title = movie.dataset.title;
+                const genres = movie.dataset.genre;
+
+                const searchMatch = title.includes(search.value.toLowerCase());
+                const genreMatch = genre.value === "all" || genres.includes(genre.value);
+
+                if (searchMatch && genreMatch) {
+                    movie.classList.remove("d-none");
+                    count++;
+                } else {
+                    movie.classList.add("d-none");
+                }
+            });
+
+            noResults.classList.toggle("d-none", count !== 0);
+        }
+
+        search.addEventListener("input", filterMovies);
+        genre.addEventListener("change", filterMovies);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVault | Discover Movies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark cine-navbar">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand fw-bold" href="#">
+                🎬 Cine <span>Vault</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#movies">Movies</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tv-shows">TV Shows</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#genres">Genres</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO CAROUSEL ================= -->
+    <section class="hero-section">
+        <div id="movieCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <!-- MOVIE 1 -->
+                <div class="carousel-item active">
+                    <div class="hero-slide harry-potter">
+                        <div class="container">
+                            <div class="hero-content">
+                                <span class="featured-label">
+                                    FEATURED MOVIE
+                                </span>
+                                <h1 class="title1">
+                                    Harry Potter 1
+                                </h1>
+                                <h2 class="title2">
+                                    AND THE SORCERER'S STONE
+                                </h2>
+                                <p class="movie-meta">
+                                    2001
+                                    <span>•</span>
+                                    Fantasy
+                                    <span>•</span>
+                                    Adventure
+                                    <span>•</span>
+                                    Family
+                                </p>
+                                <p class="movie-description">
+                                    An ordinary boy discovers a magical
+                                    world and begins an extraordinary
+                                    journey at Hogwarts School of Witchcraft
+                                    and Wizardry.
+                                </p>
+                                <div class="hero-buttons">
+                                    <button class="btn btn-primary" type="button">
+                                        <a href="https://www.youtube.com/watch?v=VyHV0BRtdxo" target="_blank">
+                                            ▶ Watch Trailer
+                                        </a>
+                                    </button>
+                                    <button class="btn btn-outline-light" type="button">
+                                        ⓘ More Info
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MOVIE 2 -->
+                <div class="carousel-item">
+                    <div class="hero-slide interstellar">
+                        <div class="container">
+                            <div class="hero-content">
+                                <span class="featured-label">
+                                    EDITOR'S PICK
+                                </span>
+                                <h1 class="title1">
+                                    AVENGERS
+                                </h1>
+                                <h2 class="title2">
+                                    EARTH'S MIGHTIEST HEROES
+                                </h2>
+                                <p class="movie-meta">
+                                    2014
+                                    <span>•</span>
+                                    Sci-Fi
+                                    <span>•</span>
+                                    Adventure
+                                    <span>•</span>
+                                    Action
+                                </p>
+                                <p class="movie-description">
+                                    When an unexpected threat puts Earth in danger, Earth's mightiest heroes must unite
+                                    to protect humanity. Can Iron Man, Captain America, Thor, Hulk, Black Widow, and
+                                    Hawkeye save the world?
+                                </p>
+                                <div class="hero-buttons">
+                                    <button class="btn btn-primary" type="button">
+                                        <a href="https://www.youtube.com/watch?v=irVNGjRFZGk" target="_blank">
+                                            ▶ Watch Trailer
+                                        </a>
+                                    </button>
+                                    <button class="btn btn-outline-light" type="button">
+                                        ⓘ More Info
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MOVIE 3-->
+                <div class="carousel-item">
+                    <div class="hero-slide inception">
+                        <div class="container">
+                            <div class="hero-content">
+                                <span class="featured-label">
+                                    MUST WATCH
+                                </span>
+                                <h1 class="title1">
+                                    Inception
+                                </h1>
+                                <h2 class="title2">
+                                    YOUR MIND IS THE SCENE
+                                </h2>
+                                <p class="movie-meta">
+                                    2010
+                                    <span>•</span>
+                                    Sci-Fi
+                                    <span>•</span>
+                                    Action
+                                    <span>•</span>
+                                    Thriller
+                                </p>
+                                <p class="movie-description">
+                                    Enter a world where dreams become
+                                    reality and the line between
+                                    imagination and truth disappears.
+                                </p>
+                                <div class="hero-buttons">
+                                    <button class="btn btn-primary" type="button">
+                                        <a href="https://www.youtube.com/watch?v=YoHD9XEInc0" target="_blank">
+                                            ▶ Watch Trailer
+                                        </a>
+                                    </button>
+                                    <button class="btn btn-outline-light" type="button">
+                                        ⓘ More Info
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PREVIOUS BUTTON -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev"
+                aria-label="Previous movie">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <!-- NEXT BUTTON -->
+            <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next"
+                aria-label="Next movie">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <!-- SLIDE INDICATORS -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Harry Potter"></button>
+                <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="1"
+                    aria-label="Interstellar"></button>
+                <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="2"
+                    aria-label="Inception"></button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =================== Browse by Genre ==========================-->
+    <section class="genre-section py-5" id="genres">
+        <div class="container">
+
+            <div class="section-heading mb-4">
+                <p class="section-label">EXPLORE YOUR MOOD</p>
+                <h2>Browse by <span>Genre</span></h2>
+            </div>
+
+            <div class="row g-3">
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="#movies" class="genre-card action">
+                        <span>💥</span>
+                        <h5>Action</h5>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="#" class="genre-card comedy">
+                        <span>😂</span>
+                        <h5>Comedy</h5>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="#movies" class="genre-card scifi">
+                        <span>🚀</span>
+                        <h5>Sci-Fi</h5>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="#" class="genre-card horror">
+                        <span>👻</span>
+                        <h5>Horror</h5>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="#" class="genre-card romance">
+                        <span>❤️</span>
+                        <h5>Romance</h5>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="#movies" class="genre-card thriller">
+                        <span>🔍</span>
+                        <h5>Thriller</h5>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="#movies" class="genre-card fantasy">
+                        <span>🪄</span>
+                        <h5>Fantasy</h5>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="#tv-shows" class="genre-card drama">
+                        <span>🎭</span>
+                        <h5>Drama</h5>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--====================== Trending Movies Section ==================== -->
+    <section class="trending-section py-5" id="movies">
+        <div class="container">
+
+            <div class="section-heading d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <p class="section-label">WHAT'S POPULAR</p>
+                    <h2>Trending <span>Movies</span></h2>
+                </div>
+
+                <a href="movies.html" class="view-all">View All →</a>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Movie 1 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="movie-card">
+                        <img src="images/avengers.webp" alt="The Avengers movie poster">
+                        <div class="movie-card-info">
+                            <h5>The Avengers</h5>
+                            <p>2012 • Action</p>
+                            <p class="imdb">★ IMDb 8.0/10</p>
+                            <button class="btn btn-sm btn-outline-light"><a
+                                    href="https://www.hotstar.com/in/movies/avengers-endgame/1260013556?search_query=av"
+                                    target="_blank">More Info</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie 2 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="movie-card">
+                        <img src="images/harrypotter.avif" alt="harry-potter movie poster">
+                        <div class="movie-card-info">
+                            <h5>harry potter</h5>
+                            <p>2014 • fantasy</p>
+                            <p class="imdb">★ IMDb 7.7/10</p>
+                            <button class="btn btn-sm btn-outline-light"><a
+                                    href="https://www.hotstar.com/in/movies/harry-potter-and-the-sorcerers-stone/1971000398"
+                                    target="_blank">More
+                                    Info</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie 3 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="movie-card">
+                        <img src="images/inception.avif" alt="Inception movie poster">
+                        <div class="movie-card-info">
+                            <h5>Inception</h5>
+                            <p>2010 • Thriller</p>
+                            <p class="imdb">★ IMDb 8.8/10</p>
+                            <button class="btn btn-sm btn-outline-light"><a
+                                    href="https://www.hotstar.com/in/movies/inception/1971000530?search_query=interste"
+                                    target="_blank">More
+                                    Info</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie 4 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="movie-card">
+                        <img src="images/intersteller.avif" alt="interstellar movie poster">
+                        <div class="movie-card-info">
+                            <h5>Interstellar</h5>
+                            <p>2001 • Sci-Fi</p>
+                            <p class="imdb">★ IMDb 9/10</p>
+                            <button class="btn btn-sm btn-outline-light"><a
+                                    href="https://www.hotstar.com/in/movies/interstellar/1971000531?search_query=interste"
+                                    target="_blank">More
+                                    Info</a></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =============== trending tv shows =============== -->
+
+    <section class="trending-section py-4" id="tv-shows">
+        <div class="container">
+
+            <div class="section-heading d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h2>Popular <span>TV Shows</span></h2>
+                </div>
+
+                <a href="#all-movies" class="view-all">View All →</a>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Movie 1 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="movie-card">
+                        <img src="images/anupama.avif" alt="The Avengers movie poster">
+                        <div class="movie-card-info">
+                            <h5>Anupama</h5>
+                            <p>2026 • Family • Drama • Hindi </p>
+                            <button class="btn btn-sm btn-outline-light"><a
+                                    href="https://www.hotstar.com/in/shows/anupama/1260022017" target="_blank">More
+                                    Info</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie 2 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="movie-card">
+                        <img src="images/laughter.avif" alt="harry-potter movie poster">
+                        <div class="movie-card-info">
+                            <h5>Laughter Chef</h5>
+                            <p>2014 • Comedy • Food </p>
+                            <button class="btn btn-sm btn-outline-light"><a
+                                    href="https://www.hotstar.com/in/shows/laughter-chefs-unlimited-entertainment/1971003517"
+                                    target="_blank">More
+                                    Info</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie 3 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="movie-card">
+                        <img src="images/arambhi.avif" alt="Inception movie poster">
+                        <div class="movie-card-info">
+                            <h5>Dr. Arambhi</h5>
+                            <p>2010 • Self-Discovery • Family Drama</p>
+                            <button class="btn btn-sm btn-outline-light"><a
+                                    href="https://www.hotstar.com/in/shows/dr-aarambhi/1271522330" target="_blank">More
+                                    Info</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie 4 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="movie-card">
+                        <img src="images/khatra.avif" alt="interstellar movie poster">
+                        <div class="movie-card-info">
+                            <h5>Khatron Ke Khilari</h5>
+                            <p>2001 • Reality • Competition </p>
+                            <button class="btn btn-sm btn-outline-light"><a
+                                    href="https://www.hotstar.com/in/shows/khatron-ke-khiladi/1971002588"
+                                    target="_blank">More
+                                    Info</a></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--===================== Why Choose CineVault======================= -->
+    <section class="why-cinevault py-5">
+        <div class="container">
+
+            <div class="section-heading text-center mb-5">
+                <p class="section-label">THE CINEVAULT EXPERIENCE</p>
+                <h2>Why Choose <span>CineVault?</span></h2>
+                <p class="why-subtitle">
+                    Your next favorite story is just a click away.
+                    Discover a world of movies and TV shows all in one place. From blockbuster hits to hidden gems,
+                    CineVault helps you explore unforgettable stories, find your next favorite, and enjoy entertainment
+                    for every mood.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎬</div>
+                        <h4>Discover Movies</h4>
+                        <p>Explore movies from different genres and find your next favorite.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">📺</div>
+                        <h4>Explore TV Shows</h4>
+                        <p>Discover exciting series and stories worth adding to your watchlist.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">⭐</div>
+                        <h4>Find Top Picks</h4>
+                        <p>Browse popular titles and IMDb ratings to help choose what to watch.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+<!-- ============================Newsletter Section======================= -->
+<section class="newsletter-section py-5" id="newsletter">
+  <div class="container">
+    <div class="newsletter-box text-center">
+
+      <p class="section-label">STAY IN THE LOOP</p>
+
+      <h2>Never Miss a <span>Great Story</span></h2>
+
+      <p class="newsletter-text">
+        Get the latest movie releases, trending shows, and entertainment
+        updates delivered straight to your inbox.
+      </p>
+
+      <form class="newsletter-form">
+        <div class="input-group">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Enter your email address"
+            aria-label="Email address"
+            required
+          >
+
+          <button class="btn newsletter-btn" type="submit">
+            Subscribe →
+          </button>
+        </div>
+      </form>
+
+      <p class="newsletter-note">
+        Join the CineVault community. No spam, just entertainment!
+      </p>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!--===================== Footer========================== -->
+<footer class="cine-footer">
+  <div class="container">
+
+    <div class="row g-4 py-5">
+
+      <!-- Brand -->
+      <div class="col-lg-4 col-md-6">
+        <a href="index.html" class="footer-brand">
+          🎬 Cine<span>Vault</span>
+        </a>
+
+        <p class="footer-description">
+          Your world of movies and TV shows. Discover stories,
+          explore genres, and find your next favorite watch.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-6 col-lg-2 col-md-3">
+        <h5>Explore</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#movies">Movies</a></li>
+          <li><a href="#tv-shows">TV Shows</a></li>
+          <li><a href="#genres">Genres</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="col-6 col-lg-2 col-md-3">
+        <h5>Company</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Links -->
+      <div class="col-lg-4 col-md-6">
+        <h5>Follow Us</h5>
+        <p class="footer-description">
+          Stay connected for more entertainment updates.
+        </p>
+
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 CineVault. All rights reserved.</p>
+      <p>Made with ♥ for movie lovers.</p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
