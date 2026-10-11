@@ -2,7 +2,7 @@
 
 ## 🌐 Live Demo
 
-**Visit CineVault:** [View Live Website](https://YOUR-USERNAME.github.io/cinevault-movie-website/)
+**Visit CineVault:** [View Live Website](https://pawancodecrafts.github.io/Movie-Website/)
 
 **Discover movies. Explore stories. Find your next favorite.**
 
